@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- This tells browsers, screen readers, and accessibility tools what language the page is in. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 01</title>
+</head>
+<body>
+
+<!-- Assign 1 -->
+
+    <!--Page title -->
+    <h1>Main Page Title</h1>
+
+    <!--Section title -->
+    <h2>First Section</h2>
+
+    <!-- Paragraph -->
+    <p>This paragraph contains some text describing the section content.</p>
+
+    <!-- assign 3: Form with submit button -->
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><hr>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><hr>
+
+        <!-- Submit button to send data -->
+        <input type="submit" value="Send Data">
+    </form>
+
+    <hr>
+
+    <!-- Accessibility: preferred way to write a range -->
+    <p>Allowed range: 10 – 20</p>
+
+    <!-- Div focusable with Tab -->
+    <div tabindex="0" style="border:1px solid black; padding:10px;">
+        Press Tab to focus on this box
+    </div>
+
+    <hr>
+
+    <!-- ARIA explanation -->
+    <p>
+        ARIA = <strong>Accessible Rich Internet Applications</strong><br>
+        These are attributes that help make websites more accessible for people with disabilities.
+    </p>
+
+
+ <!-- Assign 2 -->
+
+    <div class="choose-skill">
+        <fieldset>
+            <legend>Choose your skills</legend>
+
+            <input type="checkbox" id="skill1" name="skills" value="Python">
+            <label for="skill1">Python (Skill One)</label><br>
+
+            <input type="checkbox" id="skill2" name="skills" value="PHP">
+            <label for="skill2">PHP (Skill Two)</label><br>
+
+            <input type="checkbox" id="skill3" name="skills" value="JavaScript">
+            <label for="skill3">JavaScript (Skill Three)</label>
+        </fieldset>
+    </div>
+
+
+
+</body>
+</html>
