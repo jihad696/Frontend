@@ -34,3 +34,47 @@
 
 }
 
+/* task 2 */
+
+.element {
+    width: 400px;
+    height: 60px;
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Element 1 - Blue border */
+.element-1 {
+    border-left: 3px solid #3498db;
+}
+
+/* Element 2 - Red double border with space */
+.element-2 {
+    border-left: 3px solid #e74c3c;
+    position: relative;
+    /* Content padding */
+    padding: 0 10px;
+    line-height: 54px; /* Adjusted for padding */
+}
+
+/* Outer border for element 2 */
+.element-2::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 3px solid #e74c3c;
+    z-index: -1;
+}
+
+/* Element 3 - Green border */
+.element-3 {
+    border: 3px solid #2ecc71;
+}
+
+
