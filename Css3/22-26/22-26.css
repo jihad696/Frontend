@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* Task 1 (commented as requested)
+div {
+    padding: 20px;
+    margin: auto;
+    background-color: whitesmoke;
+    width: 400px;
+    border: 3px red solid;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p {
+    padding: inherit;
+    border: inherit;
+    background-color: rgb(200, 200, 200);
+    text-transform: capitalize;
+}
+*/
+
+/* Task 2 */
+/* div.task2 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+
+div.task3 {
+    font-family: 'Cairo';
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+div.task4{
+
+    font-family: "Jomhuria";
+
+    text-transform: capitalize;
+
+} */
+
+
+/* task 3 */
+
+.first {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+}
+
+.second {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+
+    
+}
+
+.third {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: auto;
+    text-align: center;
+
+}
+
+

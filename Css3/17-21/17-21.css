@@ -1,0 +1,55 @@
+/* p {
+  background-color: #f9f9f9;
+  color: black;
+
+  text-shadow:
+     1px 0px 0 red,
+    2px 0px 0 rgb(131, 154, 255),
+    2px 0 0 rgb(112, 0, 156);
+  
+ 
+    
+} */
+
+
+/* task 2 */
+div {
+  width: 400px;
+  padding: 15px;
+  background-color: rgb(208, 210, 210);
+
+  overflow: hidden;          
+  white-space: nowrap;      
+  text-overflow: ellipsis;   
+}
+
+
+a{
+
+  display: block;
+  padding: 20px;
+  margin-top: 30px;
+  border-bottom: 9px solid #00514a;
+  text-align: center;
+  background-color: #009688;
+  width: 100px;
+  
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+
+
+}
+
+
+p.one{
+  text-transform: uppercase;
+}
+
+.two{
+  text-transform: capitalize;
+}
+
+.three{
+  text-transform: lowercase;
+}
