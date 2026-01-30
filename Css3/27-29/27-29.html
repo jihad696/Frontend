@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 27-29</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 800px;
+            /* width: 1000px; */ /* قم بإزالة التعليق لاختبار العرض 1000px */
+            background-color: white;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .box {
+            float: right;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .box:first-child {
+            margin-right: 15px;
+        }
+
+        .full {
+            width: calc(100% - 30px);
+        }
+
+        .one-third {
+            width: calc((100% - 60px) / 3);
+        }
+
+        .half {
+            width: calc((100% - 45px) / 2);
+        }
+
+        .quarter {
+            width: calc((100% - 75px) / 4);
+        }
+
+        .box-inner {
+            background-color: #e8e8e8;
+            padding: 40px 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #666;
+        }
+        div {
+            margin: 20px auto;
+            width: 300px;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 20px;
+            background-color:#b3b3b3; /* Get The Background From Image */
+            color: black;
+        }
+        div.one{
+            background-color: rgba(179,179,179,0.1);
+        }
+        div.two{
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="box full">
+            <div class="box-inner">Full Width</div>
+        </div>
+
+        <div class="box one-third">
+            <div class="box-inner">1/3</div>
+        </div>
+        <div class="box one-third">
+            <div class="box-inner">1/3</div>
+        </div>
+        <div class="box one-third">
+            <div class="box-inner">1/3</div>
+        </div>
+
+        <div class="box half">
+            <div class="box-inner">1/2</div>
+        </div>
+        <div class="box half">
+            <div class="box-inner">1/2</div>
+        </div>
+
+        <div class="box quarter">
+            <div class="box-inner">1/4</div>
+        </div>
+        <div class="box quarter">
+            <div class="box-inner">1/4</div>
+        </div>
+        <div class="box quarter">
+            <div class="box-inner">1/4</div>
+        </div>
+        <div class="box quarter">
+            <div class="box-inner">1/4</div>
+        </div>
+
+    </div> -->
+
+
+
+    <div class="normal">Normal</div>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+
+    
+
+
+  
+</body>
+</html>
