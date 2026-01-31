@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+        p {
+            background-color: #eee;
+            margin: 20px 0 20px 100px; /* Space on left for the name box */
+            padding: 15px 20px;
+            position: relative;
+            width: 400px;
+            border-left: 5px solid #e91e63;
+        }
+
+        /* The Name Box (Osama, Ahmed, etc.) */
+        p::before {
+            content: attr(data-person);
+            position: absolute;
+            left: -100px; /* Moves it to the left of the p tag */
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ddd;
+            padding: 10px;
+            width: 60px;
+            text-align: center;
+        }
+
+        /* The Triangle Arrow */
+        p::after {
+            content: "";
+            position: absolute;
+            left: -25px; /* Positioned right on the pink border */
+            top: 50%;
+            transform: translateY(-50%);
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent #e91e63 transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+
+</body>
+</html>
