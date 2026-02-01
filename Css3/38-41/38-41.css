@@ -1,0 +1,156 @@
+/* body {
+  counter-reset: element-counter;
+  text-align: center;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block; 
+  margin: 40px;
+  font-weight: bold;
+  text-align: center; 
+  line-height: 100px; 
+  box-shadow: -5px 0 0 0 #e91e63, 5px 0 0 0 #2196f3;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div::before {
+  counter-increment: element-counter;
+  content: counter(element-counter);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  line-height: 30px; 
+  text-align: center;
+}
+
+div::after {
+  content: "Element";
+} */
+
+
+/* task 2 */
+/* 
+div
+{
+
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+  border: 1px solid;
+  border-radius: 20px 48px;
+  box-shadow: inset -5px  0 15px #070707;
+}
+
+div
+{
+
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+  border-radius: 20px 48px;
+  box-shadow: 0 0 11px 9px rgba(0, 0, 0, 0.5) inset;
+
+  -webkit-box-shadow: 0 0 11px 9px rgba(0, 0, 0, 0.5) inset;
+
+  -moz-box-shadow: 0 0 11px 9px rgba(0, 0, 0, 0.5) inset;
+
+} */
+
+
+
+/* task 3 */
+.container{
+  /* display: inline; */
+  width: 550px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.card{
+  padding: 0 0 10px 0;
+  background-color: #eeeeee;
+  margin: 5px;
+  width: calc(50% - 10px);
+  height: auto;
+  float: left;
+
+}
+
+.card.one{
+  position: absolute;
+  right: 0;
+  left: 50%;
+  top: 0;
+}
+
+.btn{
+  width: 80%;
+  background-color: #03a9f4;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 12px auto;
+  color: white;
+  font-weight: 400;
+}
+
+.content{
+  background-color: #dddddd;
+  padding: 40px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  color: black;
+  font-size: 30px;
+  line-height: 88px;
+}
+
+
+hr {
+  width: 2px;
+  height: 260px;
+  display: inline-block;
+  background-color: #007fff;
+  border: none;
+
+}
+
+.circle {
+    background-color: #03a9f4;
+    height: 30px;
+    width: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    line-height: 28px;
+    font-weight: 200;
+ 
+}
+
+
+
+
+
+
+
+
+
