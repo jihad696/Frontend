@@ -1,0 +1,240 @@
+/* task1 */
+/* div{
+    width: 100px;
+    background-color: #eeee;
+    height: 100px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 8px 0px  red,-10px 0 blue;
+    color: red;
+} */
+
+
+/* task2 */
+/* .parent {
+  width: 600px;
+  height: 300px;
+  margin: 80px auto;
+  background-color: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.parent div {
+  width: calc((100% - 40px) / 3);
+  height: 60px;
+  background-color: #f44336;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+} */
+
+
+
+/* task3 */
+
+/* .parent {
+  width: 700px;
+  height: 350px;
+  margin: 40px auto;
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.parent div {
+  background: #607d8b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.parent div:nth-child(1) { width: 32%; height: 60px; order: 6; }
+.parent div:nth-child(2) { width: 32%; height: 140px; order: 4; }
+.parent div:nth-child(3) { width: 32%; height: 60px; order: 2; }
+.parent div:nth-child(4) { width: 32%; height: 140px; order: 3; }
+.parent div:nth-child(5) { width: 32%; height: 140px; order: 5; }
+.parent div:nth-child(6) { width: 32%; height: 140px; order: 1; } */
+
+
+/* task4 */
+/* .parent {
+  width: 700px;
+  height: 350px;
+  margin: 40px auto;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+
+.parent div {
+  background: #39b189;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px;
+  height: 50px;
+}
+
+.two{
+    align-self: flex-start ;
+    width: 30%;
+} */
+
+
+
+/* task 5 */
+/* .parent {
+  width: 700px;
+  height: 350px;
+  margin: 40px auto;
+  background: #eee;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+
+}
+
+.parent div{
+    background-color: red;
+    width: 15%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #eee;
+}
+
+.parent div:nth-child(1) {
+    order: 3; 
+    align-self: flex-start;
+    background-color: #ff9800;
+}
+.parent div:nth-child(2) {
+    order:2;
+    background-color: #8bc34a;
+    
+    }
+.parent div:nth-child(3) {
+    order:1 ;
+    align-self: flex-start;
+    background-color: #795548;
+}
+.parent div:nth-child(4) {
+    order: 4;
+    background-color: #673ab7;
+} */
+
+
+/* task 6 */
+
+div.page
+{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeee;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main-area{
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    height: 520px;
+    
+}
+.content{
+    width: 65%;
+    background-color: #dddd;
+    padding: 10px;
+}
+
+.sidebar{
+  width: 29%;
+  background-color: #dddd;
+  padding: 10px;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dddd;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    align-items:center;
+    
+}
+
+
+.links{
+    display: flex;
+    list-style: none;
+    gap: 13px;
+    background-color: #dddd;
+    width:77%;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    align-items:center;
+
+    margin:0;
+    padding: 10px 30px 10px 10px; 
+
+ 
+   
+}
+
+
+.logo{
+    background-color: #dddd;
+    width: 20%;
+    display: flex;
+    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+
+
+
+
