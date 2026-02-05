@@ -1,0 +1,144 @@
+/* task 1 */
+
+/* div {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+
+div {
+    background-color: #ddd;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03a9f4;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+div::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #03a9f4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-7deg);
+    z-index: -1;
+}
+
+div::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: #e91e63;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(7deg);
+    z-index: -1;
+} 
+    */
+
+
+/* task 2 */
+
+/* div {
+
+    position: relative;
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 100px auto;
+    border-radius: 50%;
+    border: 15px solid;
+    border-color: red red red transparent;
+    transition: border-color 0.2s linear;
+
+}
+
+div:hover{
+    border-color: ;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 15px solid blue;
+    border-right-color: transparent;
+    z-index: -1;
+}
+
+div:hover
+{
+
+}
+
+ */
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #ddd;
+    width: 200px;
+    height: 200px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out; 
+    transition-delay: 0.5s;
+}
+
+div:hover::after {
+    transform: rotate(360deg);
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: 10px solid #2196f3;
+    border-right-color: transparent;
+    z-index: -1;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out; 
+    transition-delay: 0.5s;
+}
+
+div:hover::before {
+    transform: rotate(-360deg);
+}
