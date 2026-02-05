@@ -45,51 +45,10 @@ div::after {
     */
 
 
-/* task 2 */
 
-/* div {
 
-    position: relative;
-    background-color: #ddd;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 100px auto;
-    border-radius: 50%;
-    border: 15px solid;
-    border-color: red red red transparent;
-    transition: border-color 0.2s linear;
-
-}
-
-div:hover{
-    border-color: ;
-}
-
-div::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    border: 15px solid blue;
-    border-right-color: transparent;
-    z-index: -1;
-}
-
-div:hover
-{
-
-}
-
- */
-
+/* task 2,3 */
+ 
 div {
     position: absolute;
     top: 50%;
@@ -141,4 +100,4 @@ div::before {
 
 div:hover::before {
     transform: rotate(-360deg);
-}
+} 
