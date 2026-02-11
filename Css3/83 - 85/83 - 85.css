@@ -1,0 +1,223 @@
+/* @media print {
+    div {
+        font-size: 40px;
+
+    }
+} */
+
+
+/* task 2 */
+/* 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 16px;
+}
+
+.container > div {
+    background-color: #dddddd;
+    padding: 12px;
+    width: 300px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(81, 166, 166);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1400px) and (max-width: 1590px) {
+    .container {
+        justify-content: space-evenly;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .container > div {
+        width: 600px;
+        padding: 10px;
+        margin: 4px;
+    }
+
+    h2 {
+        color: red;
+    }
+}
+
+@media (min-width:768px) and (max-width: 1590px) {
+    .container {
+        justify-content: space-evenly;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .container > div {
+        width: 600px;
+        padding: 10px;
+        margin: 4px;
+    }
+
+    h2 {
+        color: red;
+    }
+}
+
+
+
+@media (max-width:767px) {
+        .container {
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .container > div {
+        width: 100%;
+        padding: 10px;
+        margin: 4px;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    
+} */
+
+/* task3 */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    height: 100vh; 
+
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product_one {
+    width: 100%;
+    background-color: #dddd;
+    padding: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+.product_two
+{
+    width: 40%;
+    background-color: #dddd;
+    padding: 20px;
+}
+
+.product_three
+{
+    width: 40%;
+    background-color: #dddd;
+    padding: 20px;
+}
+
+.product_four {
+    width: 100%;
+    background-color: #dddd;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(81, 166, 166);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+    margin: auto;
+}
+
+    .product_one {
+        width: 100%;
+        background-color: #dddddd;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+.product_two, .product_three, .product_four {
+    width: 259px;
+    background-color: #dddddd;
+    padding: 20px;
+    text-align: center;
+    margin: 13px;
+}
+
+    .product_one h2,
+    .product_two h2,
+    .product_three h2,
+    .product_four h2 {
+        color: red;
+        margin-bottom: 8px;
+    }
+
+    .product_one p,
+    .product_two p,
+    .product_three p,
+    .product_four p {
+        color: #333;
+    }
+
+}
+
+@media (max-width:965px) {
+        .container {
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .container > div {
+        width: 100%;
+        padding: 10px;
+        margin: 4px;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    
+} 
