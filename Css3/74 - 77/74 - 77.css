@@ -151,20 +151,17 @@ div.task3
 } */
 
 /******************** TaskFour **********************/
-
-body
-{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-div
-{
+
+div {
     font-size: 500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
-    /* letter-spacing: -40px; */
 }
 
 div::before {
@@ -174,12 +171,7 @@ div::before {
     position: absolute;
     top: 121px;
     left: 266px;
-    animation-name: move2;
-    animation-duration: 3s;
-    /* animation-direction: reverse;
-    animation-fill-mode: forwards; */
-    
-    
+    animation: moveE 6s linear forwards;
 }
 
 div::after {
@@ -191,66 +183,62 @@ div::after {
     right: 196px;
     animation-name: translateY;
     animation-duration: 3s;
-    /* animation-direction: alternate-reverse; */
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
- 
 }
 
-
-
-
-
-/* @keyframes translateY {
+@keyframes translateY {
     0% {
         transform: translate(0, 0);
-        
     }
-
     50% {
         transform: translateY(300px);
     }
     100% {
         transform: translate(177px, 298px);
     }
-} */
+}
 
-
-
-@keyframes move2 {
+@keyframes moveE {
     0% {
-        transform: translate(0, 0);          /* top-left */
+        transform: translate(0, 0);
     }
-    15% {
-        transform: translate(280px, 0);      /* top bar → right */
+    10% {
+        transform: translate(-220px, 0);
     }
     25% {
-        transform: translate(0, 0);          /* back left */
+        transform: translate(-220px, 160px);
     }
-    35% {
-        transform: translate(0, 180px);      /* down to middle */
+    40% {
+        transform: translate(0, 160px);
     }
     50% {
-        transform: translate(180px, 180px);  /* middle bar → right */
+        transform: translate(-220px, 160px);
     }
-    60% {
-        transform: translate(0, 180px);      /* back left */
+    65% {
+        transform: translate(-220px, 160px);
     }
-    70% {
-        transform: translate(0, 360px);      /* down to bottom */
+    80% {
+        transform: translate(0, 160px);
     }
-    85% {
-        transform: translate(280px, 360px);  /* bottom bar → right */
+    90% {
+        transform: translate(-220px, 160px);
     }
     95% {
-        transform: translate(0, 360px);      /* back left */
+        transform: translate(-220px, 0);
     }
     100% {
-        transform: translate(0, 0);          /* straight up to top */
+        transform: translate(0, 0);
     }
 }
+
+
+
+
+
+
 
 
 
