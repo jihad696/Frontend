@@ -1,0 +1,256 @@
+/**************** TaskOne Spinner ********************/
+/* div.TaskOne {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    margin: 100px auto;
+    border: 5px solid red;
+    border-radius: 50%;
+    border-left-color: transparent;
+    position: relative;
+
+    animation: rotate 1s linear infinite;
+}
+
+div.TaskOne::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(6, 31, 255);
+    border-radius: 50%;
+    border-right-color: transparent;
+}
+
+div.TaskOne::before {
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid rgb(174, 255, 0);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+}
+
+div.TaskOne:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
+
+
+/******************** TaskTwo **********************/
+/* 
+div {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    margin: 100px auto;
+    border: 5px solid red;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    position: relative;
+    animation: spin 2s linear infinite;
+    animation-play-state: paused;
+}
+
+div::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(6, 31, 255);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: change_dir 2.5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: 0.2s;
+}
+
+div.task2::before {
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid rgb(174, 255, 0);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: change_dir 3s linear infinite;
+    animation-play-state: paused;
+    animation-delay: 0.4s; 
+}
+
+div:hover {
+    animation-play-state: running;
+}
+
+div:hover::before,
+div:hover::after {
+    animation-play-state: running;
+}
+
+@keyframes change_dir {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+} */
+
+
+
+/******************** TaskThree **********************/
+/* 
+div.task3
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 3px solid black;
+    border-left-color:transparent;
+    border-radius: 50%;
+    background-color: #dddd;
+    animation: spin 0.9s linear infinite reverse;
+
+
+}
+
+@keyframes spin 
+{
+    from
+    {
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+    
+} */
+
+/******************** TaskFour **********************/
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div
+{
+    font-size: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    /* letter-spacing: -40px; */
+}
+
+div::before {
+    content: "";
+    padding: 16px;
+    background-color: red;
+    position: absolute;
+    top: 121px;
+    left: 266px;
+    animation-name: move2;
+    animation-duration: 3s;
+    /* animation-direction: reverse;
+    animation-fill-mode: forwards; */
+    
+    
+}
+
+div::after {
+    content: " ";
+    padding: 18px;
+    background-color: rgb(3, 255, 32);
+    position: absolute;
+    top: 126px;
+    right: 196px;
+    animation-name: translateY;
+    animation-duration: 3s;
+    /* animation-direction: alternate-reverse; */
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+ 
+}
+
+
+
+
+
+/* @keyframes translateY {
+    0% {
+        transform: translate(0, 0);
+        
+    }
+
+    50% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translate(177px, 298px);
+    }
+} */
+
+
+
+@keyframes move2 {
+    0% {
+        transform: translate(0, 0);          /* top-left */
+    }
+    15% {
+        transform: translate(280px, 0);      /* top bar → right */
+    }
+    25% {
+        transform: translate(0, 0);          /* back left */
+    }
+    35% {
+        transform: translate(0, 180px);      /* down to middle */
+    }
+    50% {
+        transform: translate(180px, 180px);  /* middle bar → right */
+    }
+    60% {
+        transform: translate(0, 180px);      /* back left */
+    }
+    70% {
+        transform: translate(0, 360px);      /* down to bottom */
+    }
+    85% {
+        transform: translate(280px, 360px);  /* bottom bar → right */
+    }
+    95% {
+        transform: translate(0, 360px);      /* back left */
+    }
+    100% {
+        transform: translate(0, 0);          /* straight up to top */
+    }
+}
+
+
+
